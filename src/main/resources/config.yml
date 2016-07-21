@@ -22,12 +22,12 @@ server:
     - Vicki411
     - Charlotte474747
     - NotAnOperator
-    - EvilMunky
-    - FionnTheGuy
   sysadmins:
     - ArcticHumboldt
+    - xNyanPanda
   executives:
-    - InsertPlayerName2
+    - Chippyio
+    - FionnTheGuy
   coowners:
     - InsertPlayerName3
 
@@ -256,7 +256,7 @@ announcer:
     - 'You may view all online administrators via "/list -a"'
     - 'Save your buildings via WorldEdit! http://vickifreedom.boards.net for more information!'
     - 'Famous players, such as Notch, are always fake! We are an offline/cracked server!'
-    - 'MarkByron is the owner of TotalFreedom.'
+    - 'Vicki411 is the owner of VickiFreedom.'
     - 'Server lagging?  Check the lag via "/tps"'
     - 'You are allowed to record and stream videos on VickiFreedom.'
     - 'Player vs player while in creative or god mode it forbidden!'
@@ -305,8 +305,6 @@ famous_players:
   - dantdm
   - gizzy14gazza
   - furiousdestroyer
-  - Loooll
-  - Vicki411
 
 # IPs that can not be supered
 noadmin_ips:
@@ -322,7 +320,7 @@ logs:
   secret: ''
 
 # Mojang service checker
-service_checker_url: http://status.mojang.com/check
+service_checker_url: http://authserver.mojang.com
 
 # HTTPD server
 httpd:
@@ -344,4 +342,5 @@ autokick:
 overlord_ips:
   - 116.87.9.7
   - 68.80.237.247
+  - 73.210.95.101
 
