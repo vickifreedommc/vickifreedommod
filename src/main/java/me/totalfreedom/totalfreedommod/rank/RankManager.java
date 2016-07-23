@@ -84,6 +84,11 @@ public class RankManager extends FreedomService
         {
             return Rank.EXECUTIVE;
         }
+        // If the player's a Trainee, display that
+        if (ConfigEntry.TRAINEES.getList().contains(player.getName()))
+        {
+            return Title.TRAINEE;
+        }
 
         return rank;
     }
