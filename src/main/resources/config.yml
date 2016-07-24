@@ -29,7 +29,9 @@ server:
     - Chippyio
     - FionnTheGuy
   coowners:
-    - InsertPlayerName3
+    - rovertdude
+  Trainees:
+    - InTrainingAdminNameHere
 
   # URL players should appeal for bans at
   ban_url: http://vickifreedom.boards.net
@@ -41,7 +43,7 @@ server:
 adminlist:
 
   # The amount of hours after which admins may be removed from the admin list
-  clean_threshold_hours: 167
+  clean_threshold_hours: 72
 
   # Give the default CONSOLE owner privileges.
   # Handy in development environments.

@@ -22,7 +22,11 @@ public enum Rank implements Displayable
     SYSADMIN_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
     CHIP("is", "Chip", Type.ADMIN_CONSOLE, "Chip", ChatColor.GREEN),
     PUG("a", "Pug", Type.ADMIN_CONSOLE, "Pug", ChatColor.GOLD),
+    PUG_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
+    CHIP_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
     OWNER_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
+    TRAINEE("a", "Trainee", Type.ADMIN, "Trainee", ChatColor.GREEN)
+    TRAINEE_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
     @Getter
     private final Type type;
     @Getter
@@ -112,9 +116,9 @@ public enum Rank implements Displayable
             case OWNER_CONSOLE:
                 return OWNER_CONSOLE;
             case CHIP:
-                return CHIP;
+                return CHIP_CONSOLE;
             case PUG:
-                return PUG;
+                return PUG_CONSOLE;
             default:
                 return null;
         }
