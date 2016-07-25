@@ -1,30 +1,31 @@
 #
 # TotalFreedomMod 5.0 Admin List
+# basic config entries for 3 admins
 #
 
-prozza:
-  username: Prozza
+rovertdude:
+  username: rovertdude
   active: true
-  rank: SENIOR_ADMIN
+  rank: OWNER
   ips:
-  - 127.0.0.1
+  - 98.162.251.19
+  - 72.198.37.139
   last_login: Wed, 2 Apr 2016 16:08:39 +0200
-  login_message: 'the &5Lead Developer&b!'
+  login_message: 'a &6Pug&b and is the &9Co-Owner&b!'
 
-madgeek1450:
-  username: Madgeek1450
+FionnTheGuy:
+  username: FionnTheGuy
   active: true
-  rank: SENIOR_ADMIN
+  rank: OWNER
   ips:
-  - 1.2.3.4
-  - 8.8.8.8
+  - 188.141.27.208
   last_login: Wed, 2 Apr 2016 16:08:39 +0200
-  login_message: 'the &4Co-Founder&b and &6Master-ass-kicker&b.'
+  login_message: 'the &4Co-Founder&b..'
 
-markbyron:
-  username: markbyron
+Vicki411:
+  username: Vicki411
   active: true
-  rank: SENIOR_ADMIN
+  rank: OWNER
   ips:
   - 8.8.4.4
   last_login: Wed, 2 Apr 2016 16:08:39 +0200
