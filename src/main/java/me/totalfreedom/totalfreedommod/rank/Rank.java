@@ -25,8 +25,6 @@ public enum Rank implements Displayable
     PUG_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
     CHIP_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
     OWNER_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
-    TRAINEE("a", "Trainee", Type.ADMIN, "Trainee", ChatColor.GREEN)
-    TRAINEE_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
     @Getter
     private final Type type;
     @Getter
