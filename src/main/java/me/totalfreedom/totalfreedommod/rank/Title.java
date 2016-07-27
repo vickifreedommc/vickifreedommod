@@ -9,8 +9,7 @@ public enum Title implements Displayable
     DEVELOPER("a", "Developer", ChatColor.DARK_PURPLE, "Dev"),
     VFMDEVELOPER("a", "Developer", ChatColor.DARK_PURPLE, "Dev"),
     VFMLEADDEVELOPER("the", "Lead Developer", ChatColor.DARK_PURPLE, "Lead-Dev"),
-    COOWNER("the", "Co-Owner", ChatColor.BLUE, "Co-Owner"),
-    TRAINEE("a", "Trainee", ChatColor.GREEN, "Trainee");
+    COOWNER("the", "Co-Owner", ChatColor.BLUE, "Co-Owner");
 
     private final String determiner;
     @Getter
