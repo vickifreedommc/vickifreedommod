@@ -31,7 +31,7 @@ server:
   coowners:
     - rovertdude
   Trainees:
-    - InTrainingAdminNameHere
+    - Crosal
 
   # URL players should appeal for bans at
   ban_url: http://vickifreedom.boards.net

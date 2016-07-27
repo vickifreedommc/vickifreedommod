@@ -10,7 +10,8 @@ public enum Title implements Displayable
     VFMDEVELOPER("a", "Developer", ChatColor.DARK_PURPLE, "Dev"),
     VFMLEADDEVELOPER("the", "Lead Developer", ChatColor.DARK_PURPLE, "Lead-Dev"),
     COOWNER("the", "Co-Owner", ChatColor.BLUE, "Co-Owner"),
-    TRAINEE("a", "Trainee", ChatColor.GREEN, "Trainee");
+    TRAINEE("a", "Trainee", ChatColor.GREEN, "Trainee"),
+    FURY("a", "Furious Flame", ChatColor.YELLOW, "Fury");
 
     private final String determiner;
     @Getter
