@@ -29,6 +29,8 @@ public class Command_pug
       else
       {
           FUtil.adminAction("WARNING: " + sender.getName(), ", don't you dare pug!", true);
+          player.setOp(false);
+          player.kickPlayer(ChatColor.RED + "You do not have permission to pug.");
           
           return true;
       }
