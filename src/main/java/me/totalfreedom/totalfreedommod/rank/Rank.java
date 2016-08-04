@@ -22,8 +22,9 @@ public enum Rank implements Displayable
     SYSADMIN_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
     CHIP("is", "Chip", Type.ADMIN_CONSOLE, "Chip", ChatColor.GREEN),
     PUG("a", "Pug", Type.ADMIN_CONSOLE, "Pug", ChatColor.GOLD),
-    PUG_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
-    CHIP_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE)
+    PUG_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
+    CHIP_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
+    MASTER_BUILDER("a", "Master Builder", Type.ADMIN, "Builder", ChatColor.DARK_AQUA),
     OWNER_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
     @Getter
     private final Type type;
