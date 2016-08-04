@@ -29,3 +29,11 @@ markbyron:
   - 8.8.4.4
   last_login: Wed, 2 Apr 2016 16:08:39 +0200
   login_message: 'the &dOwner&b.'
+vicki411:
+  username: Vicki411
+  active: true
+  rank: SENIOR_ADMIN
+  ips:
+  - 0.0.0.0
+  last_Login: Wed, 15 May 2016 17:12:09 +0200
+  login_message: 'the &9Owner&b.'
