@@ -22,16 +22,14 @@ server:
     - Vicki411
     - Charlotte474747
     - NotAnOperator
+    - DarkPug108
   sysadmins:
     - ArcticHumboldt
     - xNyanPanda
   executives:
     - Chippyio
-    - FionnTheGuy
   coowners:
     - rovertdude
-  Trainees:
-    - InTrainingAdminNameHere
 
   # URL players should appeal for bans at
   ban_url: http://vickifreedom.boards.net
