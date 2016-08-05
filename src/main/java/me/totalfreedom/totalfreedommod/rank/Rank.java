@@ -25,6 +25,7 @@ public enum Rank implements Displayable
     PUG_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
     CHIP_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
     MASTER_BUILDER("a", "Master Builder", Type.ADMIN, "Builder", ChatColor.DARK_AQUA),
+    SECURITY("a", "Security Officer", Type.ADMIN_CONSOLE, "Security", ChatColor.BLUE),
     OWNER_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
     @Getter
     private final Type type;
@@ -148,6 +149,8 @@ public enum Rank implements Displayable
             return CHIP;
             case PUG:
             return PUG;
+            case SECURITY:
+                return SECURITY;
             default:
                 return null;
         }
@@ -176,6 +179,7 @@ public enum Rank implements Displayable
     {
 
         PLAYER,
+        FUCKBOY,
         ADMIN,
         ADMIN_CONSOLE;
 
