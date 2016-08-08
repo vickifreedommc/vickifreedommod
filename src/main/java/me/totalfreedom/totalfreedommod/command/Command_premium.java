@@ -48,7 +48,7 @@ public class Command_premium extends FreedomCommand
                     final URLConnection urlConnection = getUrl.openConnection();
                     // Read the response
                     final BufferedReader in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-                    final String message = (" ".equalsIgnoreCase(in.readLine()) ? ChatColor.RED + "No" : ChatColor.DARK_GREEN + "Yes");
+                    final String message = ("".equalsIgnoreCase(in.readLine()) ? ChatColor.RED + "No" : ChatColor.DARK_GREEN + "Yes");
                     in.close();
 
                     if (!plugin.isEnabled())
