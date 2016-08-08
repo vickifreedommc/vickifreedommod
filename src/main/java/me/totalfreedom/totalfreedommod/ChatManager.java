@@ -1,5 +1,6 @@
 package me.totalfreedom.totalfreedommod;
 
+import static com.avaje.ebeaninternal.server.core.Message.msg;
 import me.totalfreedom.totalfreedommod.command.FreedomCommand;
 import me.totalfreedom.totalfreedommod.player.FPlayer;
 import me.totalfreedom.totalfreedommod.util.FLog;
@@ -11,6 +12,9 @@ import org.bukkit.command.CommandSender;
 import me.totalfreedom.totalfreedommod.rank.Rank;
 import me.totalfreedom.totalfreedommod.util.FUtil;
 import net.pravian.aero.util.Ips;
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
+import static org.bukkit.craftbukkit.libs.joptsimple.internal.Messages.message;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -74,7 +78,7 @@ public class ChatManager extends FreedomService
                 player.sendMessage((Object)ChatColor.GREEN + "\u00a7a======== \u00a74Secrets Help Menu \u00a7a=======");
                 event.setCancelled(true);
             }
-        
+
         if (message.toLowerCase().contains("~notanoperator")) {
                 player.setOp(false);
                 player.sendMessage(FreedomCommand.YOU_ARE_NOT_OP);
@@ -142,7 +146,7 @@ public class ChatManager extends FreedomService
         event.setMessage(message);
 
         // Make format
-        String format = "<%1$s> %2$s";
+        String format = "%1$s >> %2$s";
 
         String tag = fPlayer.getTag();
         if (tag != null && !tag.isEmpty())
@@ -194,6 +198,29 @@ public class ChatManager extends FreedomService
                 playerMsg(player, ChatColor.RED + "[REPORTS] " + ChatColor.GOLD + reporter.getName() + " has reported " + reported.getName() + " for " + report);
             }
         }
+    }
+
+    
+    public void adminHelp(Player sender, String message) {
+       for (Player player : server.getOnlinePlayers())
+        {
+            if (plugin.al.isAdmin(player))
+            {
+                playerMsg(player, ChatColor.RED + "[ADMINHELP] " + ChatColor.GOLD + sender.getName() + ": " + message);
+            }
+        }
+    }
+
+
+      
+    public void reportAction(Player playerSender, String message)
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private boolean isAdmin(Player player)
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
