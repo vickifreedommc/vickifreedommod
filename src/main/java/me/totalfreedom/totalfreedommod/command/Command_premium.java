@@ -44,11 +44,11 @@ public class Command_premium extends FreedomCommand
             {
                 try
                 {
-                    final URL getUrl = new URL("https://minecraft.net/haspaid.jsp?user=" + name);
+                    final URL getUrl = new URL("https://api.mojang.com/users/profiles/minecraft/" + name);
                     final URLConnection urlConnection = getUrl.openConnection();
                     // Read the response
                     final BufferedReader in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-                    final String message = ("false".equalsIgnoreCase(in.readLine()) ? ChatColor.RED + "No" : ChatColor.DARK_GREEN + "Yes");
+                    final String message = (" ".equalsIgnoreCase(in.readLine()) ? ChatColor.RED + "No" : ChatColor.DARK_GREEN + "Yes");
                     in.close();
 
                     if (!plugin.isEnabled())
