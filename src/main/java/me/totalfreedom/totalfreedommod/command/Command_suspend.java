@@ -37,6 +37,12 @@ public class Command_suspend extends FreedomCommand
             sender.sendMessage(FreedomCommand.PLAYER_NOT_FOUND);
             return true;
         }
+        
+        if (!plugin.al.isAdmin(player)) {
+             msg(ChatColor.RED + "You can not suspend an OP");
+             return true;
+         }
+        {
 
         FUtil.adminAction(sender.getName(), "Suspending " + player.getName(), true);
         FUtil.bcastMsg(player.getName() + " will be in all regrets!", ChatColor.RED);
@@ -44,10 +50,7 @@ public class Command_suspend extends FreedomCommand
         final String ip = player.getAddress().getAddress().getHostAddress().trim();
         
   
-         if (!player.isOp()) {
-             msg(ChatColor.RED + "You can not suspend an OP");
-         }
-        {
+         
         
         // Remove from superadmin
         Admin admin = getAdmin(player);
