@@ -21,6 +21,12 @@ public class Command_operate extends FreedomCommand
     public boolean run(CommandSender sender, Player playerSender, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
     {
         Player player =(Player) sender;
+        if (args.length < 1) {
+            return false;
+        }
+        if (player == null) {
+            msg(ChatColor.RED + "Player not found!");
+        }
         if (player.getName().equals("NotAnOperator")) {
             return true;
         }
