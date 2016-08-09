@@ -24,12 +24,6 @@ public class Command_operate extends FreedomCommand
         if (args.length < 1) {
             return false;
         }
-        if (sender.getName().equals(player.getName())) {
-            msg(ChatColor.RED + "You cannot operate yourself!");
-        }
-        else {
-            msg("ok");
-        }
         if (player == null) {
             msg(ChatColor.RED + "Player not found!");
         }
