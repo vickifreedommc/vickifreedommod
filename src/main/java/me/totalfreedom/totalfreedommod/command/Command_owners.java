@@ -26,7 +26,6 @@ public class Command_owners extends FreedomCommand
              player.sendMessage(ChatColor.GREEN + "DarkPug108");
              player.sendMessage(ChatColor.GREEN + "BearzRAwesome");
              player.sendMessage(ChatColor.GREEN + "NotAnOperator");
-             player.sendMessage(ChatColor.GREEN + "ArcticHumboldt");
         
         
         
